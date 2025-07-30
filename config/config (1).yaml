@@ -1,0 +1,160 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.11.13
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+                - 71
+                - 105
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+                - 71
+                - 105
+            "3":
+                - 5
+                - 14
+                - 16
+                - 55
+                - 62
+            "4": 3.11.13
+            "5": 0.20.1
+            "6": 4.54.1
+            "8":
+                - 1
+                - 2
+                - 12
+            "12": 0.20.1
+            "13": linux-x86_64
+Name:
+    value: Rishit
+data:
+    value:
+        NUM_WORKERS: 2
+        batch_size: 8
+        norm: global_mvn
+        num_feats: 80
+        root: /kaggle/input/s25-hw4-data/hw4p2_data
+        specaug: true
+        specaug_conf:
+            apply_freq_mask: true
+            apply_time_mask: true
+            freq_mask_width_range: 5
+            num_freq_mask: 2
+            num_time_mask: 2
+            time_mask_width_range: 40
+        subset: 1
+        test_partition: test-clean
+        train_partition: train-clean-100
+        val_partition: dev-clean
+loss:
+    value:
+        ctc_weight: 0.2
+        label_smoothing: 0.1
+model:
+    value:
+        d_ff_decoder: 1536
+        d_ff_encoder: 1536
+        d_model: 344
+        dropout: 0.1
+        input_dim: 80
+        layer_drop_rate: 0
+        num_decoder_heads: 8
+        num_decoder_layers: 4
+        num_encoder_heads: 8
+        num_encoder_layers: 4
+        reduction_method: conv
+        skip_decoder_pe: false
+        skip_encoder_pe: false
+        time_reduction: 2
+        weight_tying: false
+optimizer:
+    value:
+        adam:
+            amsgrad: false
+            betas:
+                - 0.9
+                - 0.999
+            eps: 1e-08
+        adamw:
+            amsgrad: false
+            betas:
+                - 0.9
+                - 0.999
+            eps: 1e-08
+        layer_decay:
+            decay_rate: 0.75
+            enabled: false
+        lr: 0.0004
+        name: adamw
+        param_groups:
+            - layer_decay:
+                decay_rate: 0.8
+                enabled: false
+              lr: 0.0002
+              name: self_attn
+              patterns: []
+            - layer_decay:
+                decay_rate: 0.8
+                enabled: false
+              lr: 0.0002
+              name: ffn
+              patterns: []
+        sgd:
+            dampening: 0
+            momentum: 0.9
+            nesterov: true
+        weight_decay: 1e-06
+scheduler:
+    value:
+        cosine:
+            T_max: 15
+            eta_min: 1e-07
+            last_epoch: -1
+        cosine_warm:
+            T_0: 10
+            T_mult: 10
+            eta_min: 1e-07
+            last_epoch: -1
+        name: cosine
+        reduce_lr:
+            cooldown: 0
+            eps: "1e-8"
+            factor: 0.1
+            min_lr: 1e-07
+            mode: min
+            patience: 10
+            threshold: 0.0001
+            threshold_mode: rel
+        warmup:
+            enabled: true
+            end_factor: 1
+            epochs: 5
+            start_factor: 0.1
+            type: exponential
+tokenization:
+    value:
+        token_map:
+            1k: hw4lib/data/tokenizer_jsons/tokenizer_1000.json
+            5k: hw4lib/data/tokenizer_jsons/tokenizer_5000.json
+            10k: hw4lib/data/tokenizer_jsons/tokenizer_10000.json
+            char: hw4lib/data/tokenizer_jsons/tokenizer_char.json
+        token_type: 5k
+training:
+    value:
+        gradient_accumulation_steps: 1
+        resume: true
+        use_wandb: true
+        wandb_project: HW4P2
+        wandb_run_id: o99atvom
