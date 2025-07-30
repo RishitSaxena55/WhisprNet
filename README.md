@@ -15,7 +15,7 @@ WhisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recog
 ### Self Attention Weights
 ![](results/attention-weights/self-attention-weights.png)
 
-## Cross Attention Weights
+### Cross Attention Weights
 ![](results/attention-weights/cross-attention-weights.png)
 
 ## Metrics
