@@ -1,2 +1,24 @@
 # WhisprNet
-WisprNet: An Encoder-Decoder Model for Automatic Speech Recognition
+WisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recognition System
+
+## Inference Results
+![](results/inference_results/1.png)
+![](results/inference_results/2.png)
+![](results/inference_results/3.png)
+![](results/inference_results/4.png)
+![](results/inference_results/5.png)
+
+## Attention Weights
+### Self Attention Weights
+![](results/attention-weights/self-attention-weights.png)
+
+## Cross Attention Weights
+![](results/attention-weights/cross-attention-weights.png)
+
+## Metrics
+![](results/metrics/metrics-1.png)
+![](results/metrics/metrics-2.png)
+![](results/metrics/metrics-3.png)
+
+## Model
+![](results/model.model.png)
