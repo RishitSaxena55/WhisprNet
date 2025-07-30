@@ -25,3 +25,5 @@ WhisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recog
 
 ## Model
 ![](results/model/model.png)
+
+##### Open for any countributions or collaborations to make Machine Learning based tech solutions.
