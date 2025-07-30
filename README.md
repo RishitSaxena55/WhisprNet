@@ -21,4 +21,4 @@ WisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recogn
 ![](results/metrics/metrics-3.png)
 
 ## Model
-![](results/model.model.png)
+![](results/model/model.png)
