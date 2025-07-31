@@ -35,6 +35,4 @@ git clone https://github.com/RishitSaxena55/WhisprNet
 cd WhisprNet
 pip install -r requirements.txt
 
----
-
 
