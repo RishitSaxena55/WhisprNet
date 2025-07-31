@@ -27,3 +27,17 @@ WhisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recog
 ![](results/model/model.png)
 
 #### Open for any countributions or collaborations to make efficient Machine Learning based Tech solutions.
+---
+
+```bash title = "Clone the Repository and Change the working directory"
+git clone https://github.com/RishitSaxena55/WhisprNet
+%cd WhisprNet
+
+---
+
+```bash title = "Install Requirements"
+pip install -r requirements.txt
+
+---
+
+
