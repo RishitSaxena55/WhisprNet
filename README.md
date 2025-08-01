@@ -1,5 +1,5 @@
 # WhisprNet
-WhisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recognition System
+WhisprNet: An Encoder-Decoder based Transformer Model for Automatic Speech Recognition Syste
 
 ## Architecture Overview
 ![](results/model-overview.png)
